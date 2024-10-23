@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CustomAppSection = () => {
  
@@ -12,9 +13,9 @@ const CustomAppSection = () => {
           <p className="mb-8 text-lg">
             We specialize in creating tailored apps and websites that enhance user experience and drive business growth
           </p>
-          <button className="bg-green-600 text-white font-bold py-3 px-6 rounded-full hover:bg-green-700 transition duration-300">
+          <Link to='/courses' className="inline-block bg-green-600 text-white font-bold py-3 px-6 rounded-full hover:bg-green-700 transition duration-300">
             Explore &gt;
-          </button>
+          </Link>
         </div>
         <div className="lg:w-1/2 relative z-10">
           <img 
