@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaHtml5, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import PopupForm from "./PopupForm";
+import VisitorsPopupForm from './VisitorsPopupForm';
 
 const FullStackCourseSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,7 +54,7 @@ const FullStackCourseSection = () => {
       </div>
     </section>
     {isOpen && (
-     <PopupForm isOpen={isOpen} onClose={toggleHandler}/>
+     <VisitorsPopupForm isOpen={isOpen} onClose={toggleHandler}/>
     )}
     </>
   );
