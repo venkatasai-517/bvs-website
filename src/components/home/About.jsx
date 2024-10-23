@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -15,9 +16,9 @@ const About = () => {
           Victory Solution specializes in app development, web design, UI/UX,
           and impactful marketing solutions to drive your business success.
         </p>
-        <button className="bg-blue-600 outline-none text-white rounded-3xl px-8 py-3 font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-150">
-            {'About us>'}
-        </button>
+        <Link to='/aboutus' className="inline-block bg-blue-600 outline-none text-white rounded-3xl px-8 py-3 font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-150">
+           About Us &gt;
+        </Link>
       </div>
     </div>
   );
