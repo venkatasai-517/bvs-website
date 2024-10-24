@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdOutlineDeveloperMode , MdWeb, MdCampaign, MdChat, MdAdsClick, MdLaptopMac } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const services = [
   { icon: <MdOutlineDeveloperMode />, title: 'Application development' },
@@ -21,7 +22,7 @@ const ServicesWeOffer = () => {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
           {services.map((service, index) => (
-            <div 
+            <Link to="/services" 
               key={index} 
               className="aspect-square bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer group"
             >
@@ -33,7 +34,7 @@ const ServicesWeOffer = () => {
                   {service.title}
                 </h3>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
