@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const PopupForm = ({ isOpen, onClose }) => {
+const VisitorsPopupForm = ({ isOpen, onClose }) => {
   const [disable, setDisable] = useState(false);
 
   const handleDownloadPDF = () => {
@@ -23,7 +23,7 @@ const PopupForm = ({ isOpen, onClose }) => {
     const formData = new FormData(formEle);
     try {
       const response = await fetch(
-        "Your Google Sheet Apps Script Api",
+        "Your Google sheet apps script api",
         {
           method: "POST",
           body: formData,
@@ -109,4 +109,4 @@ const PopupForm = ({ isOpen, onClose }) => {
   );
 };
 
-export default PopupForm;
+export default VisitorsPopupForm;
