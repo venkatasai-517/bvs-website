@@ -2,11 +2,11 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   server: {
-    mimeTypes: {
-      'application/javascript': ['.js'],
-      'text/css': ['.css'],
-    },
+  mimeTypes: {
+    'application/javascript': ['.js'],
   },
+},
+
   build: {
     rollupOptions: {
       output: {
