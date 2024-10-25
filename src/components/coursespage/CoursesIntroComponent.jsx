@@ -21,12 +21,16 @@ const CoursesIntroComponent = () => {
               Express.js, and MongoDB. Through real-time projects and hands-on
               learning, students gain the skills needed to build fully
               functional web applications from scratch. The course also includes
-              mentorship and personalized guidance, ensuring you're job-ready
-              with practical experience in all aspects of web development.
+              mentorship and personalized guidance, ensuring you&apos;re
+              job-ready with practical experience in all aspects of web
+              development.
             </p>
-            <button className="bg-blue-500 shadow-sm text-white py-2 px-6 rounded-full hover:bg-blue-600 hover:scale-105 hover:shadow-lg transition duration-300">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfH9msRE81T9tvPrBRWi5upq9NLkMpRYwXuqQuWehl8lclsOA/viewform" target="_blank"
+              className="inline-block bg-blue-500 shadow-sm text-white py-2 px-6 rounded-full hover:bg-blue-600 hover:scale-105 hover:shadow-lg transition duration-300"
+            >
               Enroll now
-            </button>
+            </a>
           </div>
           <div className="md:w-1/3 p-4 md:p-8">
             <img
