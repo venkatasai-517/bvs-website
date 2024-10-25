@@ -10,7 +10,7 @@ const ContactForm = () => {
     const formEle = document.querySelector("form");
     const formData = new FormData(formEle);
     try {
-      const response = await fetch("Your Google sheet apps script api ", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbyt4K-2Uy45BV-EsZyDAlv8yCkCZBAUge8JP07fOBj34SWuHb5Ngdy_dus8Mx_ZfpQ0tA/exec", {
         method: "POST",
         body: formData,
       });
